@@ -1,1 +1,3 @@
 #Triangle Solitaire
+
+##Þróun Hugbúnaðar
