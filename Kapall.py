@@ -39,11 +39,14 @@ class Kapall(tk.Tk):
 
     #Gefa hverju spili gildi fyrir samlagningu
     def gildi(tala):
-        gildi_spila = {'AS':1, 'KS':13, 'QS':12, 'JS':11, '10S':10, '9S':9, '8S':8, '7S':7, '6S':6, '5S':5, '4S':4, '3S':3, '2S':2,\
-        'AT':1, 'KT':13, 'QT':12, 'JT':11, '10T':10, '9T':9, '8T':8, '7T':7, '6T':6, '5T':5, '4T':4, '3T':3, '2T':2,\
-        'AL':1, 'KL':13, 'QL':12, 'JL':11, '10L':10, '9L':9, '8L':8, '7L':7, '6L':6, '5L':5, '4L':4, '3L':3, '2L':2,\
-        'AH':1, 'KH':13, 'QH':12, 'JH':11, '10H':10, '9H':9, '8H':8, '7H':7, '6H':6, '5H':5, '4H':4, '3H':3, '2H':2}
-    
+        gildi_spila = {'HA':1,'H2':2,'H3':3,'H4':4,'H5':5,'H6':6,'H7':7,'H8':8,'H9':9,'HT':10,'HJ':11,'HQ':12,'HK':13,\
+            'SA':1,'S2':2,'S3':3,'S4':4,'S5':5,'S6':6,'S7':7,'S8':8,'S9':9,'ST':10,'SJ':11,'SQ':12,'SK':13,\
+            'TA':1,'T2':2,'T3':3,'T4':4,'T5':5,'T6':6,'T7':7,'T8':8,'T9':9,'TT':10,'TJ':11,'TQ':12,'TK':13,\
+            'LA':1,'L2':2,'L3':3,'L4':4,'L5':5,'L6':6,'L7':7,'L8':8,'L9':9,'LT':10,'LJ':11,'LQ':12,'LK':13}
+        
+        for i in range(0, len(self)):
+            print (x[self[i]])
+
     def teikna_kapal(self):
         self = Tkinter.Tk()
         C = Tkinter.Canvas(self, bg="forest green", height=650, width=1000)
